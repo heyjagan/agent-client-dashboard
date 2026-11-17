@@ -194,7 +194,7 @@ function AgentPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-purple-50 to-pink-50 p-4 sm:p-6 lg:p-8">
 
-      {/* Back to Dashboard */}
+      
       <div className="mb-6">
         <Link
           to="/"
@@ -205,7 +205,7 @@ function AgentPage() {
         </Link>
       </div>
 
-      {/* Page Heading */}
+      
       <div className="mb-7 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <div className="mb-2 flex items-center gap-3">
@@ -232,7 +232,7 @@ function AgentPage() {
         </button>
       </div>
 
-      {/* Message */}
+      
       {message && (
         <div
           role="status"
@@ -247,7 +247,7 @@ function AgentPage() {
         </div>
       )}
 
-      {/* Add / Edit Form */}
+      
       {showForm && (
         <form
           onSubmit={handleSubmit}
@@ -342,7 +342,7 @@ function AgentPage() {
         </form>
       )}
 
-      {/* Agent Table */}
+      
       <div className="overflow-hidden rounded-xl border border-slate-100 bg-white shadow-lg">
         <div className="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 bg-gradient-to-r from-purple-50 to-pink-50 p-5">
           <div>
@@ -391,7 +391,7 @@ function AgentPage() {
                         {agent.name}
                       </td>
 
-                      {/* Agent Email - Normal Text */}
+                      
                       <td className="p-4 text-slate-600">
                         <span className="break-all">
                           {agent.email}
@@ -402,7 +402,7 @@ function AgentPage() {
                         {agent.phone}
                       </td>
 
-                      {/* Assigned Clients */}
+                      
                       <td className="p-4">
                         {assignedClients.length === 0 ? (
                           <span className="text-sm text-slate-400">
@@ -429,7 +429,7 @@ function AgentPage() {
                                         Email:{" "}
                                       </span>
 
-                                      {/* Assigned Client Email - Popup */}
+                                      
                                       <button
                                         type="button"
                                         onClick={() =>
@@ -455,7 +455,7 @@ function AgentPage() {
                         )}
                       </td>
 
-                      {/* Actions */}
+                
                       <td className="whitespace-nowrap p-4">
                         <div className="flex items-center gap-2">
                           <button
@@ -488,7 +488,7 @@ function AgentPage() {
         )}
       </div>
 
-      {/* Assigned Client Email Popup */}
+  
       {selectedEmail && (
         <div
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/30  p-4 backdrop-blur-md"
