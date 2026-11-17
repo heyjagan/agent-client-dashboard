@@ -183,7 +183,7 @@ function Dashboard() {
           </div>
         </div>
 
-        {/* Dashboard Cards */}
+       
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-3">
 
           {dashboardCards.map((card) => {
@@ -240,7 +240,7 @@ function Dashboard() {
 
         </div>
 
-        {/* Add Buttons */}
+      
         <div className="mt-9 rounded-2xl border border-white bg-white p-5 shadow-md sm:p-7">
 
           <div className="mb-5">
