@@ -54,12 +54,12 @@ function App() {
       <AgentClientProvider>
         <div className="min-h-screen bg-gray-100">
 
-          {/* Navbar */}
+         
           <header className="relative z-30 mx-2 my-2 rounded-xl bg-gradient-to-r from-blue-950 to-indigo-900 text-white shadow-lg">
 
             <div className="relative flex min-h-[70px] items-center justify-center px-4">
 
-              {/* Left Hamburger Icon */}
+             
               <button
                 type="button"
                 onClick={() => setMenuOpen(!menuOpen)}
@@ -74,7 +74,7 @@ function App() {
                 )}
               </button>
 
-              {/* Center Dashboard Title */}
+             
               <h1 className="px-12 text-center text-lg font-bold sm:text-2xl">
                 Agent Client Dashboard
               </h1>
@@ -82,7 +82,7 @@ function App() {
             </div>
           </header>
 
-          {/* Background Overlay */}
+        
           <div
             onClick={() => setMenuOpen(false)}
             className={`fixed inset-0 z-40 bg-black/50 transition-opacity duration-300 ${
@@ -92,7 +92,7 @@ function App() {
             }`}
           />
 
-          {/* Sidebar Navigation */}
+        
           <nav
             className={`fixed left-0 top-0 z-50 flex h-screen w-64 flex-col bg-indigo-950 text-white shadow-xl transition-transform duration-300 ${
               menuOpen
@@ -101,7 +101,7 @@ function App() {
             }`}
           >
 
-            {/* Sidebar Header */}
+           
             <div className="flex items-center justify-between border-b border-white/20 p-5">
 
               <h2 className="text-xl font-bold">
@@ -119,7 +119,7 @@ function App() {
 
             </div>
 
-            {/* Navigation Links */}
+          
             <div className="mt-4 flex flex-col gap-2 px-3">
 
               {links.map((link) => {
@@ -148,7 +148,7 @@ function App() {
             </div>
           </nav>
 
-          {/* Main Pages */}
+       
           <main className="mx-auto max-w-7xl px-2 sm:px-4">
 
             <Routes>
