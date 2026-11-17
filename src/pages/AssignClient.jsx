@@ -112,7 +112,7 @@ function AssignClient() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-purple-50 to-pink-50 p-4 sm:p-6 lg:p-8">
 
-      {/* Back Button */}
+     
       <div className="mb-6">
         <Link
           to="/"
@@ -123,7 +123,7 @@ function AssignClient() {
         </Link>
       </div>
 
-      {/* Page Heading */}
+    
       <div className="mb-7 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <div className="mb-2 flex items-center gap-3">
@@ -142,7 +142,7 @@ function AssignClient() {
         </div>
       </div>
 
-      {/* Assignment Form */}
+  
       <div className="mb-8 rounded-2xl border border-purple-100 bg-white p-4 shadow-lg sm:p-6 lg:p-7">
 
         <div className="mb-6 flex items-center gap-3">
@@ -163,10 +163,10 @@ function AssignClient() {
 
         <form onSubmit={handleSubmit} className="space-y-5">
 
-          {/* Dropdowns */}
+        
           <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
 
-            {/* Agent Dropdown */}
+         
             <div className="w-full min-w-0">
               <label
                 htmlFor="agent"
